@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# /legal/ is intentionally NOT disallowed here.
+# It carries a <meta name="robots" content="noindex"> instead: a crawler must be
+# allowed to fetch the page in order to see that tag and drop it from the index.
+# Disallowing it would block the fetch and the URL could still surface in results.
+
+# Common AI/scraper crawlers, opted out.
+User-agent: GPTBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Amazonbot
+Disallow: /
+User-agent: meta-externalagent
+Disallow: /
+
+Sitemap: https://appmonto.com/sitemap.xml
