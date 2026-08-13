@@ -56,6 +56,35 @@ apply their own corner mask.
 3. Add the VAT ID (UID-Nummer) to `legal/index.html` if the business leaves the
    small-business exemption (Kleinunternehmerregelung).
 
+## Personal data on the site
+
+The owner's name, postal address, and phone number appear **nowhere in plain
+text** — not in the imprint, not in the privacy notice, not in the homepage
+JSON-LD. They live as an XOR+base64 payload in the `data-x` attribute of the
+`.reveal` block in `legal/index.html`, written into the page only when a reader
+opens that `<details>` section. Crawlers render pages but do not open
+`<details>`, so the values stay out of indexes and out of naive scrapes.
+
+To change those details, regenerate the payload rather than typing them in:
+
+```bash
+python3 - <<'PY'
+import base64, itertools
+KEY = b"appmonto-studio"
+frag = '<dl><dt>Owner</dt><dd>…</dd></dl>'   # the HTML fragment to hide
+raw = frag.encode("utf-8")
+print(base64.b64encode(bytes(b ^ k for b, k in zip(raw, itertools.cycle(KEY)))).decode())
+PY
+```
+
+This is obfuscation, not secrecy: anyone determined can decode it. It stops
+address harvesters and accidental indexing, nothing stronger. Keep plain-text
+copies out of new pages, and re-run the grep below before publishing:
+
+```bash
+grep -rn "Sydorenko\|Liechtensteinklamm\|2712871" --include="*.html" .
+```
+
 The imprint carries `noindex` on purpose: it must be reachable under §5 ECG, but
 it does not have to be searchable. It is deliberately **not** disallowed in
 `robots.txt` — a crawler has to fetch the page to see the `noindex` tag.

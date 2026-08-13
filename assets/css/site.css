@@ -200,6 +200,27 @@ section.tint { background: var(--bg-tint); border-block: 1px solid var(--line); 
   background: color-mix(in srgb, var(--peak) 18%, transparent);
   border-radius: 4px; padding: 0 5px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em;
 }
+.reveal {
+  border: 1px solid var(--line); border-radius: 10px;
+  background: var(--surface); margin: 0 0 10px; padding: 0 18px;
+}
+.reveal > summary {
+  cursor: pointer; padding: 14px 0; font-weight: 600; font-size: .95rem;
+  list-style: none; display: flex; align-items: center; gap: 10px;
+}
+.reveal > summary::-webkit-details-marker { display: none; }
+.reveal > summary::before {
+  content: ""; width: 0; height: 0; flex: 0 0 auto;
+  border-left: 6px solid var(--ink-faint);
+  border-block: 4.5px solid transparent;
+  transition: transform .15s ease;
+}
+.reveal[open] > summary::before { transform: rotate(90deg); }
+.reveal > summary:hover { color: var(--accent-ink); }
+.reveal__body { padding-bottom: 10px; }
+.reveal__body dl { margin: 0; }
+.reveal__pending { color: var(--ink-faint); font-size: .9rem; margin: 0 0 10px; }
+
 .notice {
   border: 1px solid var(--line); border-left: 3px solid var(--peak);
   background: var(--surface); border-radius: 0 10px 10px 0;

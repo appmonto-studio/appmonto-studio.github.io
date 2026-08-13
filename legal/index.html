@@ -37,21 +37,31 @@
 
         <h2>Media owner and operator</h2>
         <dl>
-          <dt>Name</dt>
-          <dd>Viktor Sydorenko, trading as Appmonto Studio</dd>
+          <dt>Business</dt>
+          <dd>Appmonto Studio</dd>
 
           <dt>Legal form</dt>
           <dd lang="de">Einzelunternehmen (sole proprietorship)</dd>
 
-          <dt>Address</dt>
-          <dd>Liechtensteinklammstraße 56/3<br />5600 Sankt Johann im Pongau<br />Austria</dd>
-
           <dt>Email</dt>
           <dd><a href="mailto:hello@appmonto.com">hello@appmonto.com</a></dd>
-
-          <dt>Phone</dt>
-          <dd><a href="tel:+436602712871">+43 660 2712871</a></dd>
         </dl>
+
+        <details class="reveal">
+          <summary>Owner name, postal address and phone number</summary>
+          <div class="reveal__body"
+               data-x="XRQcU1MKAFFiBBoQFlVABQROUQsKSjlEGAAaFkk8GBQfHwoAHwARXBARWlULFU4xCQscERxeT1sREFdTBRROIQYLFwdZFhoGEAwGDxscDAIDBxtfErfqAUlaV19DUQ0cVEATRkJFVEk8AB4bGU8kGwdMHRpVDQRPMR8eCg4bSA1fU1tLJRwcFQIZDFNBEAsTTxABWjkHDh4VUUAKAFERFxBLWAhPCQIVC1JMAApBSV9BV19ZUUJHXF1WQ14PTV9BV0lZV0BQX1hfRlcaQkhaBVdTThQUU1NBEAMT">
+            <p class="reveal__pending">Opening this section shows the details.</p>
+          </div>
+          <noscript>
+            <p class="notice">This section needs JavaScript. Without it, ask for the
+            full company details at <a href="mailto:hello@appmonto.com">hello@appmonto.com</a>
+            and they will be sent to you.</p>
+          </noscript>
+        </details>
+        <p class="fine">These details are withheld from search engines and automated
+        collectors. They are given in full on request, and to any authority entitled
+        to them.</p>
 
         <h2>Registration and identification</h2>
         <dl>
@@ -122,6 +132,27 @@
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Personal details are stored obfuscated and written into the page only when a
+    // reader opens the section. Crawlers render the page but do not open <details>,
+    // so the values stay out of indexes and out of naive scrapes. This is a speed
+    // bump, not secrecy: anyone who wants the data can still decode it by hand.
+    document.querySelectorAll('.reveal').forEach(function (box) {
+      box.addEventListener('toggle', function () {
+        var body = box.querySelector('.reveal__body');
+        if (!box.open || !body || body.dataset.done) return;
+        var key = 'appmonto-studio';
+        var bin = atob(body.dataset.x);
+        var bytes = new Uint8Array(bin.length);
+        for (var i = 0; i < bin.length; i++) {
+          bytes[i] = bin.charCodeAt(i) ^ key.charCodeAt(i % key.length);
+        }
+        body.innerHTML = new TextDecoder('utf-8').decode(bytes);
+        body.dataset.done = '1';
+      });
+    });
+  </script>
 </body>
 </html>
