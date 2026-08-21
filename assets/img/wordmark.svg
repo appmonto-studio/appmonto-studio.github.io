@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 768 116" role="img" aria-label="Appmonto">
+  <title>Appmonto</title>
+  <!--
+    Original geometric letterforms, drawn on a 100-unit cap-height grid: no
+    typeface is used, so nothing here is licensed from anyone. The A repeats the
+    peak from the app mark — same chevron, same crossbar height (71% of cap).
+    Letter positions are optically spaced, not mechanically stepped.
+    Stroke inherits currentColor, so the mark follows the surrounding text.
+  -->
+  <g fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="butt" stroke-linejoin="miter">
+    <path d="M0 100 L42 0 L84 100"/><path d="M17 71 H67"/>
+    <g transform="translate(98,0)"><path d="M0 100 V0"/><path d="M0 8 H36 A21 21 0 0 1 36 50 H0"/></g>
+    <g transform="translate(182,0)"><path d="M0 100 V0"/><path d="M0 8 H36 A21 21 0 0 1 36 50 H0"/></g>
+    <g transform="translate(268,0)"><path d="M0 100 V0 L42 62 L84 0 V100"/></g>
+    <g transform="translate(374,0)"><circle cx="42" cy="50" r="42"/></g>
+    <g transform="translate(480,0)"><path d="M0 100 V0 L70 100 V0"/></g>
+    <g transform="translate(572,0)"><path d="M0 8 H84"/><path d="M42 8 V100"/></g>
+    <g transform="translate(668,0)"><circle cx="42" cy="50" r="42"/></g>
+  </g>
+</svg>

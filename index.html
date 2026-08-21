@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('appmonto-theme')==='dark'?'dark':'light'}catch(_){document.documentElement.dataset.theme='light'}</script>
   <title>Appmonto Studio — mobile apps for children and families, built in Austria</title>
   <meta name="description" content="Appmonto Studio is an independent app studio in Austria. We design and publish privacy-first mobile apps for children and families — no ads, no tracking, no dark patterns." />
   <link rel="canonical" href="https://appmonto.com/" />
-  <meta name="theme-color" content="#F7F6F3" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#141A21" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#F7F6F3" />
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
@@ -54,7 +54,8 @@
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="Appmonto Studio home">
         <img class="brand__mark" src="/assets/img/logo.svg" alt="" width="32" height="32" />
-        <span class="brand__name">Appmonto<span class="brand__sub">&nbsp;Studio</span></span>
+        <span class="brand__word" aria-hidden="true"></span>
+        <span class="brand__sub">Studio</span>
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="#brands">Brands</a>
@@ -62,6 +63,10 @@
         <a href="#studio">Studio</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div class="header-tools">
+        <nav class="lang-switch" aria-label="Language"><a href="/" aria-current="page" lang="en">EN</a><span aria-disabled="true" title="German version not available yet">DE</span><span aria-disabled="true" title="Spanish version not available yet">ES</span></nav>
+        <button class="theme-toggle" type="button" data-theme-toggle data-label-dark="Use dark theme" data-label-light="Use light theme" aria-label="Use dark theme" aria-pressed="false"><svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg><svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 15.1A8.5 8.5 0 0 1 8.9 4a8.5 8.5 0 1 0 11.1 11.1Z"/></svg></button>
+      </div>
     </div>
   </header>
 
@@ -259,7 +264,8 @@
     <div class="container footer-inner">
       <a class="brand" href="/" aria-label="Appmonto Studio home">
         <img class="brand__mark" src="/assets/img/logo.svg" alt="" width="28" height="28" />
-        <span class="brand__name">Appmonto Studio</span>
+        <span class="brand__word" aria-hidden="true"></span>
+        <span class="brand__sub">Studio</span>
       </a>
       <nav class="foot-links" aria-label="Footer">
         <a href="https://kidlogicloft.com" rel="noopener">KidLogic Loft</a>
@@ -272,6 +278,6 @@
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

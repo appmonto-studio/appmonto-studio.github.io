@@ -41,13 +41,23 @@ Individual apps are documented on their own brand sites:
 Plain HTML and CSS. No build step, no dependencies, no external fonts or scripts
 — every asset is served from this repository.
 
-## The mark
+## The marks
 
-`assets/img/logo.svg` is the source of truth: a letter **A** whose silhouette is
-also a peak, snow above the ridge line, rock below. The PNGs are rasterised from
-the same geometry — regenerate them if the SVG changes, don't edit them by hand.
-`play-icon-512.png` is the unrounded square version for store listings, which
-apply their own corner mask.
+Two pieces, drawn to the same geometry:
+
+- **`assets/img/logo.svg`** — the app mark: a letter **A** whose silhouette is
+  also a peak, snow above the ridge line, rock below. The PNGs are rasterised
+  from the same geometry — regenerate them if the SVG changes, don't edit them by
+  hand. `play-icon-512.png` is the unrounded square version for store listings,
+  which apply their own corner mask.
+- **`assets/img/wordmark.svg`** — APPMONTO, drawn as original geometric
+  letterforms on a 100-unit cap-height grid. No typeface is involved, so nothing
+  here is licensed from a foundry, and the wordmark's A repeats the app mark's
+  peak at the same crossbar height.
+
+The wordmark is painted through a CSS mask (`.brand__word`) rather than an
+`<img>`, so it inherits `currentColor` and follows the light/dark theme. Its
+width and height in CSS must keep the source aspect ratio of 768 × 116.
 
 ## Before publishing
 
