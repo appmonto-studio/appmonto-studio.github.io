@@ -128,3 +128,13 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000
+
+## Project descriptor
+
+`appmonto.yaml` at the repository root identifies this project and points at sources that already
+exist here, for studio-level tooling. It carries data and references only — never commands,
+credentials, checkout paths, status, version numbers, or copies of release evidence — and makes no
+claim about release readiness or store availability.
+
+Keep its `sources` paths correct when a referenced document moves. Do not add derived state to it:
+if a fact already lives in a document, the descriptor points at that document instead.
