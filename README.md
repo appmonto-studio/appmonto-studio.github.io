@@ -61,13 +61,12 @@ its standard library. `dist/` and local caches are ignored.
 
 ## Production boundaries
 
-The local migration does not deploy anything. The old repository must remain
+Production cutover evidence is recorded in `docs/kidlogic-migration.md`. The old repository must remain
 until the [cutover and deletion gates](docs/kidlogic-migration.md) are satisfied.
 The owner chose a direct URL replacement: update store/app/contact references,
 then retire the old website. Do not add old-domain redirects, legacy URL bridges,
 or extra hosting infrastructure. Old website URLs are intentionally retired.
-The support mailbox `support@appmonto.com` is an owner setup step, not a verified
-service. `hello@appmonto.com` remains general studio/legal contact.
+The owner confirmed `support@appmonto.com` works on 12 October 2026. `hello@appmonto.com` remains general studio/legal contact.
 
 ## The marks
 
@@ -90,7 +89,7 @@ width and height in CSS must keep the source aspect ratio of 768 × 116.
 ## Before publishing
 
 1. Register the domain and point it at GitHub Pages (below), then enable HTTPS.
-2. Verify `hello@appmonto.com` and configure `support@appmonto.com` as described in the migration document.
+2. Keep `hello@appmonto.com` and `support@appmonto.com` working as described in the migration document.
 3. Add the VAT ID (UID-Nummer) to `legal/index.html` if the business leaves the
    small-business exemption (Kleinunternehmerregelung).
 

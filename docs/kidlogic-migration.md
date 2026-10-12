@@ -81,16 +81,15 @@ A website field was not visible on the public listing; inspect Console rather
 than assuming one exists. Check any app settings, draft listings, profiles or
 other owner-controlled places that contain the old URLs and replace them directly.
 Do not rename package IDs or app namespaces. Installed-app link changes, if needed,
-belong in a separate app release; this task does not edit app code or store records.
+belong in a separate app release; this website migration does not edit app code; the authorized production cutover updates store URL/contact records.
 
-The destination had no dedicated support mailbox. `support@appmonto.com` is the
-proposed new address and must be configured and tested by the owner. Legacy email
+The owner confirmed on 12 October 2026 that `support@appmonto.com` already works. Legacy email
 forwarding is optional and independent of website retirement, not a required web
 redirect mechanism. If desired, `hello@kidlogicloft.com` can forward to the new
 mailbox; do not forward unrelated personal Gmail messages. No email administration
 has been performed here.
 
-## Deployment order (owner-run)
+## Deployment order
 
 1. Review the content and current Happy Octo free/no-subscription statement. Set up
    `support@appmonto.com` and verify receipt and replies. Keep the legal operator
@@ -116,8 +115,7 @@ has been performed here.
    as appropriate. Do not create redirects or migrate the old domain to another
    provider. Preserve mail DNS if email on that domain is still in use.
 7. After the deletion conditions below are met, the owner may separately delete
-   the old repository. No repository deletion or production action is performed
-   by this local implementation task.
+   the old repository. Repository deletion requires a separate explicit request.
 
 ## Rollback
 
@@ -165,9 +163,41 @@ had one h1, no document overflow and no broken loaded images. All 12 migrated im
 hashes match; the legal operator payload is unchanged. The source checkout was not
 modified. Redirect tests and provider dry runs are no longer relevant to this design.
 
-No authenticated Play Console, DNS, hosting or email administration was performed.
+The authorized production actions and their limits are recorded below. No DNS or
+email administration was performed.
 Unreleased-app billing facts remain release-time work. Original legal wording is
 preserved in source history/archive; current policy scopes gameplay claims to Happy
 Octo, acknowledges support/store processing and avoids zero-security-risk promises.
 Future work is tracked only in `docs/roadmap.md`; this document is the decision and
 operating procedure, not a second task inventory.
+
+## Production evidence — 12 October 2026
+
+The owner explicitly requested publication and direct URL replacement. Commit
+`363f51466d8234752c1a4bc30005561987997055` was pushed to Appmonto `main`.
+GitHub Pages reported `built` without errors. All 22 sitemap URLs and `/legal/`
+returned HTTPS 200 and their HTML matched the local committed files byte for byte.
+
+Happy Octo Play Console contact changes were saved and published. The public
+listing was subsequently checked and displayed both:
+
+- Website: `https://appmonto.com/apps/happy-octo-puzzle/`
+- Support: `support@appmonto.com`
+
+The privacy URL was changed to `https://appmonto.com/games/privacy/` and submitted
+to Google as the only review item. Console showed “Changes in review”; managed
+publishing is off. The public listing still used `https://kidlogicloft.com/privacy/`
+at the last check. Old GitHub Pages hosting therefore remains enabled until that
+public reference changes. No redirects, DNS changes or repository deletion occurred.
+
+Closer Look: Farm is a draft with its privacy URL empty; no legacy privacy URL
+needed replacing there. Its release setup was not completed as part of this task.
+A bounded read-only source check found Happy Octo's feedback email still set to
+`octo@kidlogicloft.com` in `SettingsScreen.kt`. App source and published binaries
+were not changed. Preserve legacy mail service until an app release replaces it;
+this is separate from retiring web hosting.
+
+Both repositories' GitHub Pages API configurations were saved alongside the source
+archive as `*-pages-before-retirement.json`. These capture branch, domain and HTTPS
+settings, not DNS or mailbox configuration. Mailbox readiness is owner-confirmed;
+no test email was sent. Remaining cutover work is tracked only in AWEB-002.

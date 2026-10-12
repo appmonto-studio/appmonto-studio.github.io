@@ -33,11 +33,11 @@ or a runtime dependency to answer a question that one string can answer.
 
 ## Complete the games production cutover
 
-**AWEB-002** · `blocked` — requires owner-controlled deployment, email and Play Console actions.
+**AWEB-002** · `blocked` — requires Google approval and public propagation of the replacement privacy URL.
 
-Follow `docs/kidlogic-migration.md` for the approved migration design, exact
-cutover order, verification and rollback. Local implementation does not satisfy
-external cutover gates. Update known store/app/contact URLs directly, verify the
-new support address and privacy links, then retire the old website without
-redirects. Retain an independently recoverable source archive plus relevant
-provider configuration before considering source-repository deletion.
+Follow `docs/kidlogic-migration.md` for cutover evidence and rollback. Once the
+public Happy Octo listing uses the Appmonto privacy URL, disable the old GitHub
+Pages website without redirects and verify its retirement. Preserve the source
+repository/archive and legacy mail service. Happy Octo's in-app feedback email
+requires replacement in a separate app release before that mailbox is retired.
+Repository deletion remains a separately authorized action.
