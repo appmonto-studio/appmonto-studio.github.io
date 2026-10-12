@@ -33,11 +33,11 @@ or a runtime dependency to answer a question that one string can answer.
 
 ## Complete the games production cutover
 
-**AWEB-002** · `blocked` — requires owner-controlled deployment, DNS/hosting, email and Play Console actions.
+**AWEB-002** · `blocked` — requires owner-controlled deployment, email and Play Console actions.
 
 Follow `docs/kidlogic-migration.md` for the approved migration design, exact
 cutover order, verification and rollback. Local implementation does not satisfy
-external cutover gates. Preserve old domain continuity, account for the historical
-GitHub project alias, verify support forwarding and store privacy links, and
-retain an independently recoverable source archive plus provider configuration
-before considering source-repository deletion.
+external cutover gates. Update known store/app/contact URLs directly, verify the
+new support address and privacy links, then retire the old website without
+redirects. Retain an independently recoverable source archive plus relevant
+provider configuration before considering source-repository deletion.

@@ -96,15 +96,6 @@ for lang,t in T.items():
 
 urls=[HOST+'/'+p.removesuffix('index.html') for p in OUTPUT]+[HOST+'/privacy/']
 OUTPUT['sitemap.xml']='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{u}</loc></url>\n' for u in urls)+'</urlset>\n'
-# GitHub's former project-path URLs may fall through to the account site after
-# the project Pages site is disabled. These are HTML bridges, never claimed as 301s.
-for lang, t in T.items():
-    for old, final in [('', 'games/'), ('privacy/', 'games/privacy/'), ('apps/happy-octo-puzzle/', 'apps/happy-octo-puzzle/')]:
-        target = HOST + route(lang, final)
-        path = 'kidlogicloft.github.io' + route(lang, old) + 'index.html'
-        OUTPUT[path] = f'''<!DOCTYPE html>
-<html lang="{lang}"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, follow" /><meta http-equiv="refresh" content="0; url={target}" /><link rel="canonical" href="{target}" /><title>Appmonto Studio</title></head><body><h1>Appmonto Studio</h1><p><a href="{target}">{e(t['games'] if not old else t['privacy'] if old=='privacy/' else 'Happy Octo Puzzle')}</a></p></body></html>
-'''
 changed=[]
 for name,content in OUTPUT.items():
     path=ROOT/name

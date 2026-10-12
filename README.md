@@ -35,8 +35,6 @@ manager, external fonts, runtime dependencies or required npm install.
 | `legal/index.html`, `privacy/index.html`, `404.html` | Existing hand-written legal, website privacy and error pages |
 | `assets/css/site.css`, `assets/js/site.js` | Shared studio visual language and theme switch |
 | `apps/happy-octo-puzzle/*.png`, `assets/img/shots/` | Preserved game images |
-| `infra/redirects/` | Independent old-domain HTTP 301 Worker, map and routing tests |
-| `kidlogicloft.github.io/` | Generated noindex HTML bridges for historical project paths |
 | `docs/kidlogic-migration.md` | Migration decisions, exact external cutover/rollback and deletion gates |
 | `docs/migration-inventory.md` | Every source page/asset and its destination or retirement |
 
@@ -50,7 +48,6 @@ Edit sources, then regenerate the committed files:
 ```bash
 python3 tools/generate_site.py
 python3 tools/build_site.py
-node --test infra/redirects/worker.test.mjs
 node --check assets/js/site.js
 git diff --check
 ```
@@ -59,17 +56,18 @@ git diff --check
 locale reciprocity, canonical URLs, structured data and sitemap, and exports a
 clean `dist/` production artifact. GitHub Pages still serves the committed root;
 this export does not change its publishing configuration. No pre-existing lint or
-type suite exists. Node 22+ is used only for redirect tests; Python uses its
-standard library. `dist/` and local caches are ignored.
+type suite exists. Node is used only for the JavaScript syntax check; Python uses
+its standard library. `dist/` and local caches are ignored.
 
 ## Production boundaries
 
 The local migration does not deploy anything. The old repository must remain
 until the [cutover and deletion gates](docs/kidlogic-migration.md) are satisfied.
-Deleting a repository does not retain its domain redirects. The proposed redirect
-Worker belongs to this repo and needs owner-configured hosting/DNS. The support
-mailbox `support@appmonto.com` and forwarding are also owner setup steps, not
-verified services. `hello@appmonto.com` remains general studio/legal contact.
+The owner chose a direct URL replacement: update store/app/contact references,
+then retire the old website. Do not add old-domain redirects, legacy URL bridges,
+or extra hosting infrastructure. Old website URLs are intentionally retired.
+The support mailbox `support@appmonto.com` is an owner setup step, not a verified
+service. `hello@appmonto.com` remains general studio/legal contact.
 
 ## The marks
 
@@ -92,7 +90,7 @@ width and height in CSS must keep the source aspect ratio of 768 × 116.
 ## Before publishing
 
 1. Register the domain and point it at GitHub Pages (below), then enable HTTPS.
-2. Verify `hello@appmonto.com` and configure `support@appmonto.com` plus legacy forwarding as described in the migration document.
+2. Verify `hello@appmonto.com` and configure `support@appmonto.com` as described in the migration document.
 3. Add the VAT ID (UID-Nummer) to `legal/index.html` if the business leaves the
    small-business exemption (Kleinunternehmerregelung).
 

@@ -44,9 +44,7 @@ for p in paths:
     page=Page(s); pages[url]=page
     assert page.h1==1, f'{rel}: expected one h1'
     assert page.lang in ['en','de','es'],rel
-    if rel.startswith('kidlogicloft.github.io/'):
-        assert page.noindex and len(page.canonical)==1 and page.canonical[0].startswith(HOST+'/'),rel
-    elif rel!='404.html': assert page.canonical==[url],f'{rel}: canonical {page.canonical}'
+    if rel!='404.html': assert page.canonical==[url],f'{rel}: canonical {page.canonical}'
     assert not re.search(r'KidLogic Loft|Cozy Meadow Farm|hello@kidlogicloft|no in.app purchases|keine in.app.käufe|sin compras dentro de la app',s,re.I),rel
     for data in page.json: assert isinstance(data,dict),rel
 

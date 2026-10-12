@@ -44,7 +44,7 @@ If the user explicitly requests a specific test or verification step, that reque
 
 - Appmonto Studio is the public studio/publisher for all games. KidLogic Loft is
   retired as a public-facing brand; retain it only in historical documentation,
-  source redirects and published app identifiers.
+  migration provenance and published app identifiers.
 - Closer Look is the interactive diorama series. Use exactly Closer Look: Farm
   instead of Cozy Meadow Farm in current marketing. It is in development; the
   series is not limited to farms and no future settings are announced releases.
@@ -60,5 +60,7 @@ If the user explicitly requests a specific test or verification step, that reque
 - Keep legal operator information unchanged unless verified facts require a change.
 - Read `docs/kidlogic-migration.md` before hosting/domain/support cutover work.
   No local build establishes production readiness or permission to delete a repo.
-- Run `python3 tools/build_site.py` and relevant routing checks for cohesive changes.
-  Never run `tools/verify_cutover.py` as evidence of a cutover that has not happened.
+- The owner chose direct URL replacement without redirects. Do not add legacy
+  domain routing, HTML redirect bridges or new redirect hosting infrastructure.
+  Update known store/app/contact URLs before retiring the old website.
+- Run `python3 tools/build_site.py` for cohesive changes.

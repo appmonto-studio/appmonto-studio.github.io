@@ -8,7 +8,7 @@ Every tracked source file is accounted for below. No fonts, additional game artw
 |---|---|---|
 | `.gitignore` | `—` | Source repository guidance/configuration retained in archive; not copied to public site |
 | `AGENTS.md` | `—` | Source repository guidance/configuration retained in archive; not copied to public site |
-| `CNAME` | `infra/redirects/wrangler.jsonc` | Do not copy; old custom domain becomes redirect service |
+| `CNAME` | `—` | Do not copy; retire the old website after updating known URLs |
 | `README.md` | `—` | Source repository guidance/configuration retained in archive; not copied to public site |
 | `apple-touch-icon.png` | `assets/img/apple-touch-icon.png` | Retired source studio mark; use existing Appmonto mark |
 | `appmonto.yaml` | `—` | Source repository guidance/configuration retained in archive; not copied to public site |
@@ -45,3 +45,5 @@ Every tracked source file is accounted for below. No fonts, additional game artw
 | `tools/generate_home.py` | `tools/generate_site.py + content/` | Localized useful copy migrated; source generator retired |
 
 Ignored local `.claude/` settings and Python caches are explicitly excluded from migration and the tracked-source archive.
+
+The owner chose direct URL replacement without redirects. Destination paths above describe content migration, not forwarding rules. Old domain and project-path URLs are intentionally retired.

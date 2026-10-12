@@ -14,7 +14,7 @@ subprocess.run([sys.executable,str(ROOT/'tools/check_site.py')],check=True)
 out=ROOT/'dist'
 if out.exists(): shutil.rmtree(out)
 out.mkdir()
-for name in ['index.html','404.html','CNAME','.nojekyll','robots.txt','sitemap.xml','favicon.png','assets','apps','games','support','de','es','legal','privacy','kidlogicloft.github.io']:
+for name in ['index.html','404.html','CNAME','.nojekyll','robots.txt','sitemap.xml','favicon.png','assets','apps','games','support','de','es','legal','privacy']:
     src=ROOT/name
     if src.is_dir(): shutil.copytree(src,out/name)
     else: shutil.copy2(src,out/name)
