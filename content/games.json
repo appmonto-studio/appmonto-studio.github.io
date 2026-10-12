@@ -1,0 +1,251 @@
+{
+  "en": {
+    "games": "Games",
+    "support": "Support",
+    "privacy": "Game privacy",
+    "skip": "Skip to content",
+    "legal": "Imprint",
+    "website": "Website privacy (English)",
+    "home": "Studio home",
+    "intro": "Thoughtful mobile play for children aged 3–8. No ads. Ever. Some apps offer optional paid content, with pricing and what is included explained clearly.",
+    "series": "Closer Look is a series of calm interactive dioramas, each inviting you to explore a small world at your own pace. Settings can vary from one release to another.",
+    "farm": "Closer Look: Farm is a calm interactive diorama set on a farm. Characters come to life with a tap, then settle again.",
+    "planned": "In-app purchases are planned. Pricing and included content will be explained before release.",
+    "offline": "Core puzzle play in Happy Octo Puzzle works offline. Downloads, purchases and purchase restoration may require an internet connection.",
+    "pricing": "Some apps offer optional paid content. Pricing and what is included are explained clearly.",
+    "private": "Read each game’s privacy information for details about gameplay, store services and support.",
+    "about": "Appmonto Studio designs and publishes these games in Austria. Each game keeps its own personality; the same no-advertising commitment applies to all.",
+    "elia": "Elia is our distinct family of apps for birth and family life.",
+    "studio_title": "Apps for children and families.",
+    "studio_intro": "Appmonto Studio is an independent studio in Austria. Explore our games and Elia, our family of apps for birth and family life.",
+    "contact": "For help, choose an app below. Please describe the issue and include your app version and device model. Do not send information about your child.",
+    "support_head": "Help with your app",
+    "updated": "Updated: 12 October 2026",
+    "sections": [
+      [
+        "Scope and operator",
+        "This policy covers Happy Octo Puzzle published by Appmonto Studio, for children aged 3–8. The legal operator is unchanged and is identified in the imprint. Clever Beaver and Closer Look: Farm are in development; their release-specific disclosures will be published before launch."
+      ],
+      [
+        "Gameplay and children’s privacy",
+        "Happy Octo Puzzle does not require an account and does not collect personal information through gameplay. It does not use advertising, analytics or behavioural profiles. It does not access contacts, location, camera or microphone."
+      ],
+      [
+        "Offline play",
+        "Happy Octo Puzzle’s puzzles work offline. Downloading the app and using Google Play services are separate from core gameplay and may require a connection."
+      ],
+      [
+        "Store services and planned purchases",
+        "Google Play processes information under its own terms and privacy policy when you use the store. In-app purchases are planned for Closer Look: Farm. Store billing and purchase restoration may process transaction information and require a connection. This does not mean advertising or behavioural tracking is included in the game. Details specific to the released purchasing implementation will be provided before launch."
+      ],
+      [
+        "Support correspondence",
+        "If you email us, your address and message are processed to answer your request and kept only as long as needed for that purpose. Please do not send personal information about children. Support correspondence is separate from gameplay."
+      ],
+      [
+        "Security",
+        "Offline gameplay limits the information sent from the app. No service can guarantee the absence of all security risks; avoid including unnecessary personal information in support requests."
+      ],
+      [
+        "Your rights and contact",
+        "You can contact support@appmonto.com about access, correction or deletion of your support correspondence. The studio website privacy notice explains the operator, hosting and applicable privacy rights."
+      ],
+      [
+        "Changes",
+        "Changes to this policy will be published here with an updated date."
+      ]
+    ],
+    "theme": [
+      "Use dark theme",
+      "Use light theme"
+    ],
+    "eyebrow": "Playful for children. Reassuring for parents.",
+    "hero": "Calm apps for curious children.",
+    "apps_head": [
+      "Our apps",
+      "Small worlds, made with care.",
+      "Clear mechanics for children; clear terms for parents."
+    ],
+    "live": "On Google Play",
+    "learn": "View app details",
+    "octo": "Simple, colourful jigsaw puzzles with large pieces and a friendly octopus. Made for phones and tablets.",
+    "coming": "In development",
+    "beaver": "A gentle railway adventure about helping neighbours on the way to a picnic.",
+    "principles_head": [
+      "Our principles",
+      "Designed for a parent’s peace of mind.",
+      "Play stays inside the product. The promises around it stay plain and specific."
+    ],
+    "about_head": [
+      "About",
+      "Independent apps, built in Austria."
+    ],
+    "noads": "No ads. Ever."
+  },
+  "de": {
+    "games": "Spiele",
+    "support": "Support",
+    "privacy": "Datenschutz der Spiele",
+    "skip": "Zum Inhalt springen",
+    "legal": "Impressum",
+    "website": "Website-Datenschutz (Englisch)",
+    "home": "Studio-Startseite",
+    "intro": "Durchdachter mobiler Spielspaß für Kinder von 3 bis 8 Jahren. Keine Werbung. Niemals. Einige Apps bieten optionale kostenpflichtige Inhalte. Preise und enthaltene Inhalte werden klar erklärt.",
+    "series": "Closer Look ist eine Reihe ruhiger interaktiver Dioramen, in denen kleine Welten im eigenen Tempo erkundet werden können. Die Schauplätze können sich von Spiel zu Spiel unterscheiden.",
+    "farm": "Closer Look: Farm ist ein ruhiges interaktives Diorama auf einem Bauernhof. Figuren werden durch Antippen lebendig und kommen danach wieder zur Ruhe.",
+    "planned": "In-App-Käufe sind geplant. Preise und enthaltene Inhalte werden vor der Veröffentlichung erklärt.",
+    "offline": "Die Puzzles in Happy Octo Puzzle funktionieren offline. Downloads, Käufe und die Wiederherstellung von Käufen können eine Internetverbindung erfordern.",
+    "pricing": "Einige Apps bieten optionale kostenpflichtige Inhalte. Preise und enthaltene Inhalte werden klar erklärt.",
+    "private": "Die Datenschutzhinweise der einzelnen Spiele erklären die Verarbeitung beim Spielen, bei Store-Diensten und im Support.",
+    "about": "Appmonto Studio entwickelt und veröffentlicht diese Spiele in Österreich. Jedes Spiel behält seinen eigenen Charakter. Unser Versprechen, auf Werbung zu verzichten, gilt für alle.",
+    "elia": "Elia ist unsere eigenständige App-Familie für Geburt und Familienleben.",
+    "studio_title": "Apps für Kinder und Familien.",
+    "studio_intro": "Appmonto Studio ist ein unabhängiges Studio in Österreich. Entdecke unsere Spiele und Elia, unsere App-Familie für Geburt und Familienleben.",
+    "contact": "Wähle unten eine App aus. Beschreibe das Problem und nenne die App-Version und das Gerätemodell. Bitte sende keine Informationen über dein Kind.",
+    "support_head": "Hilfe zu deiner App",
+    "updated": "Aktualisiert: 12. Oktober 2026",
+    "sections": [
+      [
+        "Geltungsbereich und Betreiber",
+        "Diese Erklärung gilt für Happy Octo Puzzle von Appmonto Studio, für Kinder von 3 bis 8 Jahren. Der rechtliche Betreiber bleibt unverändert und ist im Impressum genannt. Clever Beaver und Closer Look: Farm sind in Entwicklung; ihre versionsspezifischen Datenschutzhinweise werden vor der Veröffentlichung bereitgestellt."
+      ],
+      [
+        "Spiel und Datenschutz von Kindern",
+        "Happy Octo Puzzle erfordert kein Konto und erhebt beim Spielen keine personenbezogenen Daten. Es verwendet keine Werbung, Analysen oder Verhaltensprofile. Es greift nicht auf Kontakte, Standort, Kamera oder Mikrofon zu."
+      ],
+      [
+        "Offline spielen",
+        "Die Puzzles in Happy Octo Puzzle funktionieren offline. Der Download und die Dienste von Google Play sind vom eigentlichen Spiel getrennt und können eine Verbindung erfordern."
+      ],
+      [
+        "Store-Dienste und geplante Käufe",
+        "Google Play verarbeitet bei der Nutzung des Stores Informationen gemäß seinen eigenen Bedingungen und Datenschutzhinweisen. Für Closer Look: Farm sind In-App-Käufe geplant. Die Abrechnung im Store und die Wiederherstellung von Käufen können Transaktionsdaten verarbeiten und eine Verbindung erfordern. Dies bedeutet nicht, dass das Spiel Werbung oder Verhaltenstracking enthält. Einzelheiten zur konkreten Kaufimplementierung werden vor der Veröffentlichung bereitgestellt."
+      ],
+      [
+        "Support-Anfragen",
+        "Wenn du uns eine E-Mail sendest, verarbeiten wir deine Adresse und Nachricht zur Beantwortung deiner Anfrage und bewahren sie nur so lange auf, wie dafür erforderlich. Bitte sende keine personenbezogenen Daten von Kindern. Support-Anfragen sind vom Spiel getrennt."
+      ],
+      [
+        "Sicherheit",
+        "Offline-Spiel begrenzt die aus der App übertragenen Informationen. Kein Dienst kann sämtliche Sicherheitsrisiken ausschließen. Vermeide unnötige personenbezogene Daten in Support-Anfragen."
+      ],
+      [
+        "Deine Rechte und Kontakt",
+        "Wende dich für Auskunft, Berichtigung oder Löschung deiner Support-Korrespondenz an support@appmonto.com. Die Datenschutzhinweise der Studio-Website erläutern Betreiber, Hosting und geltende Datenschutzrechte."
+      ],
+      [
+        "Änderungen",
+        "Änderungen dieser Erklärung werden hier mit einem aktualisierten Datum veröffentlicht."
+      ]
+    ],
+    "theme": [
+      "Dunkles Design verwenden",
+      "Helles Design verwenden"
+    ],
+    "eyebrow": "Verspielt für Kinder. Beruhigend für Eltern.",
+    "hero": "Ruhige Apps für neugierige Kinder.",
+    "apps_head": [
+      "Unsere Apps",
+      "Kleine Welten, mit Sorgfalt gemacht.",
+      "Klare Spielmechaniken für Kinder und klare Bedingungen für Eltern."
+    ],
+    "live": "Bei Google Play",
+    "learn": "App ansehen",
+    "octo": "Einfache, bunte Puzzles mit großen Teilen und einem freundlichen Oktopus. Für Smartphones und Tablets.",
+    "coming": "In Entwicklung",
+    "beaver": "Ein ruhiges Eisenbahnabenteuer über kleine Hilfen auf dem Weg zu einem Picknick.",
+    "principles_head": [
+      "Unsere Prinzipien",
+      "Damit Eltern ein gutes Gefühl haben.",
+      "Das Spielerische bleibt im Produkt. Unsere Versprechen bleiben klar und konkret."
+    ],
+    "about_head": [
+      "Über uns",
+      "Unabhängige Apps, entwickelt in Österreich."
+    ],
+    "noads": "Keine Werbung. Niemals."
+  },
+  "es": {
+    "games": "Juegos",
+    "support": "Soporte",
+    "privacy": "Privacidad de los juegos",
+    "skip": "Saltar al contenido",
+    "legal": "Aviso legal",
+    "website": "Privacidad del sitio (inglés)",
+    "home": "Inicio del estudio",
+    "intro": "Juego móvil pensado para niños de 3 a 8 años. Sin anuncios. Nunca. Algunas apps ofrecen contenido de pago opcional, con precios y contenido incluido explicados claramente.",
+    "series": "Closer Look es una serie de dioramas interactivos y tranquilos para explorar pequeños mundos a tu propio ritmo. Los escenarios pueden variar entre entregas.",
+    "farm": "Closer Look: Farm es un diorama interactivo y tranquilo ambientado en una granja. Los personajes cobran vida con un toque y después vuelven a descansar.",
+    "planned": "Se prevén compras dentro de la app. Los precios y el contenido incluido se explicarán antes del lanzamiento.",
+    "offline": "Los puzles de Happy Octo Puzzle funcionan sin conexión. Las descargas, compras y restauraciones de compras pueden requerir internet.",
+    "pricing": "Algunas apps ofrecen contenido de pago opcional. Los precios y el contenido incluido se explican claramente.",
+    "private": "Consulta la información de privacidad de cada juego para conocer los detalles del juego, los servicios de la tienda y el soporte.",
+    "about": "Appmonto Studio diseña y publica estos juegos en Austria. Cada juego conserva su personalidad; el compromiso de no incluir publicidad se aplica a todos.",
+    "elia": "Elia es nuestra familia de apps para el nacimiento y la vida familiar, con identidad propia.",
+    "studio_title": "Apps para niños y familias.",
+    "studio_intro": "Appmonto Studio es un estudio independiente en Austria. Descubre nuestros juegos y Elia, nuestra familia de apps para el nacimiento y la vida familiar.",
+    "contact": "Elige una app a continuación. Describe el problema e incluye la versión de la app y el modelo del dispositivo. No envíes información sobre tu hijo.",
+    "support_head": "Ayuda con tu app",
+    "updated": "Actualizado: 12 de octubre de 2026",
+    "sections": [
+      [
+        "Ámbito y responsable",
+        "Esta política cubre Happy Octo Puzzle, publicado por Appmonto Studio para niños de 3 a 8 años. El operador legal no cambia y se identifica en el aviso legal. Clever Beaver y Closer Look: Farm están en desarrollo; su información específica de privacidad se publicará antes del lanzamiento."
+      ],
+      [
+        "Juego y privacidad infantil",
+        "Happy Octo Puzzle no requiere una cuenta ni recopila información personal durante el juego. No utiliza publicidad, analíticas ni perfiles de comportamiento. No accede a contactos, ubicación, cámara ni micrófono."
+      ],
+      [
+        "Juego sin conexión",
+        "Los puzles de Happy Octo Puzzle funcionan sin conexión. La descarga y los servicios de Google Play son independientes del juego y pueden requerir una conexión."
+      ],
+      [
+        "Servicios de la tienda y compras previstas",
+        "Google Play procesa información según sus propias condiciones y política de privacidad al utilizar la tienda. Se prevén compras dentro de Closer Look: Farm. La facturación de la tienda y la restauración de compras pueden procesar datos de transacciones y requerir una conexión. Esto no implica publicidad ni seguimiento del comportamiento en el juego. Los detalles de la implementación de compras se facilitarán antes del lanzamiento."
+      ],
+      [
+        "Correspondencia de soporte",
+        "Si nos escribes, procesamos tu dirección y mensaje para responder a tu solicitud y los conservamos solo durante el tiempo necesario para ello. No envíes información personal de niños. La correspondencia de soporte es independiente del juego."
+      ],
+      [
+        "Seguridad",
+        "El juego sin conexión limita la información transmitida desde la app. Ningún servicio puede garantizar la ausencia de todos los riesgos de seguridad; evita incluir información personal innecesaria en las solicitudes de soporte."
+      ],
+      [
+        "Tus derechos y contacto",
+        "Puedes escribir a support@appmonto.com para solicitar acceso, corrección o eliminación de tu correspondencia de soporte. El aviso de privacidad del sitio del estudio explica el operador, el alojamiento y los derechos de privacidad aplicables."
+      ],
+      [
+        "Cambios",
+        "Los cambios de esta política se publicarán aquí con una fecha actualizada."
+      ]
+    ],
+    "theme": [
+      "Usar tema oscuro",
+      "Usar tema claro"
+    ],
+    "eyebrow": "Divertidas para los niños. Tranquilas para los padres.",
+    "hero": "Apps tranquilas para niños curiosos.",
+    "apps_head": [
+      "Nuestras apps",
+      "Pequeños mundos, creados con cuidado.",
+      "Mecánicas claras para los niños y condiciones claras para los padres."
+    ],
+    "live": "En Google Play",
+    "learn": "Ver la app",
+    "octo": "Puzles sencillos y coloridos, con piezas grandes y un pulpo simpático. Para teléfonos y tabletas.",
+    "coming": "En desarrollo",
+    "beaver": "Una tranquila aventura en tren sobre ayudar a los vecinos de camino a un pícnic.",
+    "principles_head": [
+      "Nuestros principios",
+      "Diseñadas para la tranquilidad de los padres.",
+      "El juego se queda dentro del producto. Nuestras promesas son claras y concretas."
+    ],
+    "about_head": [
+      "Quiénes somos",
+      "Apps independientes, creadas en Austria."
+    ],
+    "noads": "Sin anuncios. Nunca."
+  }
+}

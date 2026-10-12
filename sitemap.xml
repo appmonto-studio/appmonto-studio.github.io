@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://appmonto.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://appmonto.com/privacy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <url><loc>https://appmonto.com/</loc></url>
+  <url><loc>https://appmonto.com/games/</loc></url>
+  <url><loc>https://appmonto.com/apps/happy-octo-puzzle/</loc></url>
+  <url><loc>https://appmonto.com/apps/clever-beaver/</loc></url>
+  <url><loc>https://appmonto.com/apps/closer-look-farm/</loc></url>
+  <url><loc>https://appmonto.com/games/privacy/</loc></url>
+  <url><loc>https://appmonto.com/support/</loc></url>
+  <url><loc>https://appmonto.com/de/</loc></url>
+  <url><loc>https://appmonto.com/de/games/</loc></url>
+  <url><loc>https://appmonto.com/de/apps/happy-octo-puzzle/</loc></url>
+  <url><loc>https://appmonto.com/de/apps/clever-beaver/</loc></url>
+  <url><loc>https://appmonto.com/de/apps/closer-look-farm/</loc></url>
+  <url><loc>https://appmonto.com/de/games/privacy/</loc></url>
+  <url><loc>https://appmonto.com/de/support/</loc></url>
+  <url><loc>https://appmonto.com/es/</loc></url>
+  <url><loc>https://appmonto.com/es/games/</loc></url>
+  <url><loc>https://appmonto.com/es/apps/happy-octo-puzzle/</loc></url>
+  <url><loc>https://appmonto.com/es/apps/clever-beaver/</loc></url>
+  <url><loc>https://appmonto.com/es/apps/closer-look-farm/</loc></url>
+  <url><loc>https://appmonto.com/es/games/privacy/</loc></url>
+  <url><loc>https://appmonto.com/es/support/</loc></url>
+  <url><loc>https://appmonto.com/privacy/</loc></url>
 </urlset>

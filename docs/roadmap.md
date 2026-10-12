@@ -7,7 +7,7 @@ or `README.md`, the entry is removed and Git history preserves the wording.
 Release and publication state is deliberately absent; it belongs to release evidence
 and store records, never to a second copy here.
 
-Task IDs: prefix **AWEB**, next unused **AWEB-002**. Numbers are never reused.
+Task IDs: prefix **AWEB**, next unused **AWEB-003**. Numbers are never reused.
 
 One heading is one task. Bullets under a heading are its specification, not separate
 tasks. Status is `todo`, `blocked`, or `idea`; a `todo` entry carries a
@@ -29,3 +29,15 @@ the site answers and says nothing about what is in it.
 
 Keep it a static marker written at publish time. Do not add analytics, a build service
 or a runtime dependency to answer a question that one string can answer.
+
+
+## Complete the games production cutover
+
+**AWEB-002** · `blocked` — requires owner-controlled deployment, DNS/hosting, email and Play Console actions.
+
+Follow `docs/kidlogic-migration.md` for the approved migration design, exact
+cutover order, verification and rollback. Local implementation does not satisfy
+external cutover gates. Preserve old domain continuity, account for the historical
+GitHub project alias, verify support forwarding and store privacy links, and
+retain an independently recoverable source archive plus provider configuration
+before considering source-repository deletion.

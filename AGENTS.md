@@ -38,3 +38,27 @@ In stabilization mode:
 Do not perform repeated full-suite or emulator runs unless failures or subsequent changes justify them.
 
 If the user explicitly requests a specific test or verification step, that request overrides these defaults.
+
+
+# Website publishing and game identity
+
+- Appmonto Studio is the public studio/publisher for all games. KidLogic Loft is
+  retired as a public-facing brand; retain it only in historical documentation,
+  source redirects and published app identifiers.
+- Closer Look is the interactive diorama series. Use exactly Closer Look: Farm
+  instead of Cozy Meadow Farm in current marketing. It is in development; the
+  series is not limited to farms and no future settings are announced releases.
+- Elia is a distinct product family; keep https://getelia.app and do not change
+  that website as part of game maintenance.
+- No advertising in any app. Optional in-app purchases are allowed. Do not invent
+  prices, launch dates, included-content offers, subscriptions or payment features.
+- Preserve published Android IDs, namespaces and store URLs despite legacy names.
+- Edit generated content via `content/` and `tools/generate_site.py`; regenerate
+  before checking. Reuse Appmonto CSS/components and EN/DE/ES route conventions.
+- Keep game privacy (`/games/privacy/`) separate from website privacy (`/privacy/`).
+  Distinguish offline gameplay from online downloads, billing/restoration and support.
+- Keep legal operator information unchanged unless verified facts require a change.
+- Read `docs/kidlogic-migration.md` before hosting/domain/support cutover work.
+  No local build establishes production readiness or permission to delete a repo.
+- Run `python3 tools/build_site.py` and relevant routing checks for cohesive changes.
+  Never run `tools/verify_cutover.py` as evidence of a cutover that has not happened.

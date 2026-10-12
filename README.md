@@ -1,45 +1,75 @@
 # appmonto-studio.github.io
 
-The public site of **Appmonto Studio** — an independent app studio in Austria,
-and the umbrella for the studio's app brands.
+The public site of **Appmonto Studio**, an independent app studio and game publisher
+in Austria. Live at **https://appmonto.com** via GitHub Pages.
 
-Live at **https://appmonto.com** (custom domain; also served at
-https://appmonto-studio.github.io) via GitHub Pages.
+## Products and brand decisions
 
-## What this is
+Appmonto Studio publishes the games directly. KidLogic Loft is retired as a
+public-facing brand. “Games” is a descriptive section, not a replacement brand.
+The speculative third-brand placeholder is removed because no approved product
+was available. Elia remains a distinct family at https://getelia.app.
 
-A one-page brand site: who the studio is, which brands it publishes under, and
-how to reach it. Plus the legally required imprint and a privacy notice. It sells
-nothing, tracks nothing, and has no backend.
+- Happy Octo Puzzle: released on Google Play, existing app identifier/store URL retained.
+- Clever Beaver: in development.
+- **Closer Look**: the calm interactive diorama series, with settings that may vary.
+  **Closer Look: Farm** replaces Cozy Meadow Farm in current public copy and remains
+  in development. No other series releases are announced.
+- No ads in any app. In-app purchases are allowed; Farm purchases are planned.
+  Never invent prices, included content, launch dates or a studio-wide subscription promise.
+- Gameplay, store/billing services and support have separate privacy/offline implications.
+  The legal operator has not changed. Keep published app identifiers unchanged.
 
-Individual apps are documented on their own brand sites:
+## Structure and editing
 
-| Brand | Audience | Site |
-|---|---|---|
-| KidLogic Loft | Children, ages 3–8 | https://kidlogicloft.com |
-| Elia | Birth and family life | https://getelia.app |
-| _(third brand)_ | In development | — |
+Plain HTML/CSS with local JavaScript for the theme switch. No framework, package
+manager, external fonts, runtime dependencies or required npm install.
 
-## Structure
+| Source | Purpose |
+|---|---|
+| `content/games.json` | EN/DE/ES game, studio, support and privacy copy |
+| `content/home/en.html` | Existing English studio homepage content |
+| `content/octo/{en,de,es}.html` | Migrated detailed Happy Octo body content |
+| `tools/generate_site.py` | Shared Appmonto shell, localized pages, metadata and sitemap |
+| `index.html`, `de/`, `es/`, `games/`, `apps/`, `support/` | Committed generated pages served by Pages |
+| `legal/index.html`, `privacy/index.html`, `404.html` | Existing hand-written legal, website privacy and error pages |
+| `assets/css/site.css`, `assets/js/site.js` | Shared studio visual language and theme switch |
+| `apps/happy-octo-puzzle/*.png`, `assets/img/shots/` | Preserved game images |
+| `infra/redirects/` | Independent old-domain HTTP 301 Worker, map and routing tests |
+| `kidlogicloft.github.io/` | Generated noindex HTML bridges for historical project paths |
+| `docs/kidlogic-migration.md` | Migration decisions, exact external cutover/rollback and deletion gates |
+| `docs/migration-inventory.md` | Every source page/asset and its destination or retirement |
 
+English routes use the root; German and Spanish use `/de/` and `/es/`. Each has
+`games/`, `apps/happy-octo-puzzle/`, `apps/clever-beaver/`, `apps/closer-look-farm/`,
+`games/privacy/`, and `support/`. `/privacy/` remains the website notice, distinct
+from app privacy. Legal documents remain English with their language indicated.
+
+Edit sources, then regenerate the committed files:
+
+```bash
+python3 tools/generate_site.py
+python3 tools/build_site.py
+node --test infra/redirects/worker.test.mjs
+node --check assets/js/site.js
+git diff --check
 ```
-.
-├── index.html            # The site
-├── 404.html
-├── legal/index.html      # Imprint (Impressum) — noindex
-├── privacy/index.html    # Website privacy notice
-├── assets/
-│   ├── css/site.css      # Hand-written, light + dark
-│   └── img/              # logo.svg, favicon.svg, apple-touch-icon.png, og.png,
-│                         # icon-512.png, play-icon-512.png (square, unrounded)
-├── CNAME                 # appmonto.com
-├── robots.txt            # Sitemap + AI-crawler opt-out
-├── sitemap.xml
-└── .nojekyll             # Serve files as-is
-```
 
-Plain HTML and CSS. No build step, no dependencies, no external fonts or scripts
-— every asset is served from this repository.
+`build_site.py` checks deterministic output, validates all internal links/assets,
+locale reciprocity, canonical URLs, structured data and sitemap, and exports a
+clean `dist/` production artifact. GitHub Pages still serves the committed root;
+this export does not change its publishing configuration. No pre-existing lint or
+type suite exists. Node 22+ is used only for redirect tests; Python uses its
+standard library. `dist/` and local caches are ignored.
+
+## Production boundaries
+
+The local migration does not deploy anything. The old repository must remain
+until the [cutover and deletion gates](docs/kidlogic-migration.md) are satisfied.
+Deleting a repository does not retain its domain redirects. The proposed redirect
+Worker belongs to this repo and needs owner-configured hosting/DNS. The support
+mailbox `support@appmonto.com` and forwarding are also owner setup steps, not
+verified services. `hello@appmonto.com` remains general studio/legal contact.
 
 ## The marks
 
@@ -62,7 +92,7 @@ width and height in CSS must keep the source aspect ratio of 768 × 116.
 ## Before publishing
 
 1. Register the domain and point it at GitHub Pages (below), then enable HTTPS.
-2. Set up the `hello@appmonto.com` mailbox — the address appears on every page.
+2. Verify `hello@appmonto.com` and configure `support@appmonto.com` plus legacy forwarding as described in the migration document.
 3. Add the VAT ID (UID-Nummer) to `legal/index.html` if the business leaves the
    small-business exemption (Kleinunternehmerregelung).
 
